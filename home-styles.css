@@ -78,7 +78,7 @@ html, body {
   padding: 9px 15px;
 }
 
-section.mySlides {
+.mySlides {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,9 +88,14 @@ section.mySlides {
   height: 430px;
 }
 
-.slideshow-container__text-area section{
+.slideshow-container {
+  position: relative;
+}
+
+.slideshow-container__text-area {
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
 }
 
 .slideshow-container__text-area--header {
@@ -118,6 +123,7 @@ section.mySlides {
   text-align: justify;
   font-family: "Georgia";
   font-size: 13px;
+  cursor: pointer;
 }
 
 .slideshow-container__imgs {
@@ -126,28 +132,37 @@ section.mySlides {
   background-color: #6b6b6b;
   border: 26px solid #6b6b6b;
   border-radius: 50%;
+  margin-right: 40px;
 }
 
 .slideshow-left-arrow {
+  position: absolute;
+  top: 50%;
+  right: 950px;
   background-color: transparent;
   border: none;
   width: 30px;
   height: 32px;
+  cursor: pointer;
 }
 
 .slideshow-right-arrow {
+  position: absolute;
+  top: 50%;
+  left: 950px;
   background-color: transparent;
   border: none;
   width: 30px;
   height: 32px;
+  cursor: pointer;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.4s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1.4s;
 }
 
 @-webkit-keyframes fade {
