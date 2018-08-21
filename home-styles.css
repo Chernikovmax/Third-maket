@@ -78,17 +78,17 @@ html, body {
   padding: 9px 15px;
 }
 
-.slideshow-container {
+section.mySlides {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  width: 1000px;
+  width: 950px;
   height: 430px;
 }
 
-.slideshow-container__text-area {
+.slideshow-container__text-area section{
   display: flex;
   flex-direction: column;
 }
@@ -128,16 +128,34 @@ html, body {
   border-radius: 50%;
 }
 
-.slideshow-container__btn-left-arrow {
+.slideshow-left-arrow {
   background-color: transparent;
   border: none;
   width: 30px;
   height: 32px;
 }
 
-.slideshow-container__btn-right-arrow {
+.slideshow-right-arrow {
   background-color: transparent;
   border: none;
   width: 30px;
   height: 32px;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
