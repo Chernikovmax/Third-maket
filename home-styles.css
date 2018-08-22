@@ -4,7 +4,7 @@ html, body {
   position: relative;
 }
 
-.body-bcg {
+body {
     background-image: url(images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,6 +124,10 @@ html, body {
   font-family: "Georgia";
   font-size: 13px;
   cursor: pointer;
+  border-radius: 10px;
+  background-color: #76c38f;
+  box-sizing: border-box;
+  padding: 9px 15px;
 }
 
 .slideshow-container__imgs {
@@ -175,6 +179,12 @@ html, body {
   to {opacity: 1}
 }
 
+
+
+/* Here starts styles of main part */
+
+
+
 .first-lo {
   display: flex;
   flex-direction: row;
@@ -190,6 +200,7 @@ html, body {
   height: 305px;
   background-color: #fff;
   margin: 60px 10px 40px 10px;
+  cursor: pointer;
 }
 
 .title-cards__imgs {
@@ -260,6 +271,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin: 30px 13px;
+  cursor: pointer;
 }
 
 .second-lo-imgs {
@@ -285,4 +297,197 @@ html, body {
   box-sizing: border-box;
   padding-top: 7px;
   z-index: 3;
+}
+
+
+
+/* Here starts footer styles */
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+
+.footer-lo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #303030;
+}
+
+.footer-lo1__columns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 10px;
+}
+
+.footer-lo1__columns--header {
+  text-align: left;
+  margin: 40px 0 0 0;
+  color: #fff;
+  font-family: "Georgia";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-lo1__columns--text {
+  position: relative;
+  bottom: 18px;
+  color: #979797;
+  font-family: "Georgia";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  margin-top: 0;
+}
+
+.footer-lo1__columns--title {
+  color: #76c38f;
+  font-family: "Georgia";
+  font-size: 13px;
+  font-weight: bold;
+  margin: 33px 0 0 0;
+}
+
+.footer-lo1__columns--userdata {
+  position: relative;
+  bottom: 5px;
+  color: #666666;
+  font-family: "Georgia";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.footer-lo1__columns--username {
+  color: #76c38e;
+}
+
+.footer-lo1__columns--date {
+  position: relative;
+  bottom: 12px;
+  color: #979797;
+  font-family: "Georgia";
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footer-lo1__columns-link {
+  position: relative;
+  bottom: 20px;
+  text-decoration: none;
+  color: #76c38f;
+  font-family: "Georgia";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer-lo1__columns--ul {
+  margin-top: 28px;
+  padding: 0;
+  list-style-position: inside;
+  list-style-image: url(icons/list-style-type.png);
+}
+
+.footer-lo1__columns--li {
+  margin-top: 5px;
+}
+
+.footer-lo1__columns-links {
+  text-decoration: none;
+  color: #76c38f;
+  font-family: "Georgia";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer-lo1__columns--li-hr {
+  width: 225px;
+  height: 1px;
+  background-color: #404040;
+  border: none;
+}
+
+.footer-lo1__columns--tweets {
+  color: #979797;
+  font-family: "Georgia";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.footer-lo1__columns--contact-header {
+  text-align: left;
+  margin: 40px 0 34px 0;
+  color: #fff;
+  font-family: "Georgia";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-lo1__columns--contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.form-inputs {
+  margin-bottom: 10px;
+  width: 225px;
+  height: 35px;
+  background-color: #222222;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: none;
+  border-radius: 12px;
+}
+
+.form-message-input {
+  margin-bottom: 10px;
+  width: 225px;
+  height: 80px;
+  background-color: #222222;
+  border: none;
+  box-sizing: border-box;
+  padding: 0 0 48px 10px;
+  border-radius: 12px;
+}
+
+.form-submit {
+  border: none;
+  text-align: justify;
+  background-color: #76c38f;
+  font-family: "Georgia";
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #303030;
+  box-sizing: border-box;
+  padding: 11px 11px;
+  cursor: pointer;
+}
+
+.footer-lo2 {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+  color: #979797;
+  font-family: "Georgia";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.footer-lo2__copyright {
+  margin-right: 480px;
 }
