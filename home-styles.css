@@ -203,8 +203,14 @@ body {
   cursor: pointer;
 }
 
-.title-cards__imgs {
+.title-cards__img {
   margin-top: 21px;
+}
+
+.title-cards__bcg-img {
+  position: absolute;
+  margin-top: 21px;
+  opacity: 0;
 }
 
 .first-lo__card-text {
@@ -222,6 +228,26 @@ body {
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
+}
+
+/* Styles that changes on hover */
+
+.title-cards:hover {
+  background-color: #76c38f;
+  color:#fff;
+}
+
+.title-cards:hover p {
+  color:#fff;
+}
+
+.title-cards:hover span {
+  color:#fff;
+}
+
+.title-cards:hover .title-cards__bcg-img {
+  opacity: 1;
+  filter:alpha (opacity=1);
 }
 
 .between-lo {
@@ -280,6 +306,24 @@ body {
   background-color: #fff;
   border: 5px solid #fff;
   z-index: 1;
+}
+
+.second-lo-bcg-imgs {
+  position: absolute;
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  z-index: 10;
+  opacity: 0;
+}
+
+.second-lo-bcg-imgs:hover {
+  opacity: 1;
+  filter:alpha (opacity=1);
+  -moz-transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 1.5s ease;
 }
 
 .second-lo-rows__text {
