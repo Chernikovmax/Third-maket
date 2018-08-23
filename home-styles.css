@@ -324,10 +324,14 @@ body {
 .second-lo-bcg-imgs:hover {
   opacity: 1;
   filter:alpha (opacity=1);
-  -moz-transition: all 2s ease;
-  -webkit-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 1.5s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.second-lo-rows__cards:hover .second-lo-imgs {
+  border-color: #76c38f;
 }
 
 .second-lo-rows__text {
