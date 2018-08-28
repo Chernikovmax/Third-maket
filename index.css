@@ -78,7 +78,21 @@ body {
   padding: 9px 15px;
 }
 
-.mySlides {
+/* Slideshow styles */
+
+.slideshow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-container__slides {
+  position: relative;
+}
+
+.slide {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -86,26 +100,34 @@ body {
   margin-top: 30px;
   width: 950px;
   height: 430px;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s;
 }
 
-.slideshow-container {
+.showing {
   position: relative;
+  opacity: 1;
+  z-index: 2;
 }
 
-.slideshow-container__text-area {
+.slide__text {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
 }
 
-.slideshow-container__text-area--header {
+.slide__text-title {
   color: #ffffff;
   font-family: "Georgia";
   font-size: 46px;
   font-weight: 400;
 }
 
-.slideshow-container__text-area--description {
+.slide__text-description {
   position: relative;
   bottom: 40px;
   color: #979797;
@@ -114,7 +136,7 @@ body {
   font-weight: 400;
 }
 
-.slideshow-container__text-area--btn {
+.slide__text-btn {
   position: relative;
   bottom: 40px;
   width: 140px;
@@ -130,7 +152,7 @@ body {
   padding: 9px 15px;
 }
 
-.slideshow-container__imgs {
+.slide__img {
   width: 430px;
   height: 430px;
   background-color: #6b6b6b;
@@ -139,53 +161,41 @@ body {
   margin-right: 40px;
 }
 
-.slideshow-left-arrow {
-  position: absolute;
-  top: 50%;
-  right: 950px;
+.slideshow-controls {
+  position: relative;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.slideshow-controls:nth-of-type(1) {
   width: 30px;
   height: 32px;
-  cursor: pointer;
 }
 
-.slideshow-right-arrow {
-  position: absolute;
-  top: 50%;
-  left: 950px;
-  background-color: transparent;
-  border: none;
+.slideshow-controls:nth-of-type(2) {
+  bottom: 10px;
   width: 30px;
   height: 32px;
-  cursor: pointer;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s;
+.slideshow-controls:nth-of-type(3) {
+  bottom: 130px;
+  right: 108px;
+  font-size: 30px;
+  border: 5px solid #6b6b6b;
+  color: #6dab7e;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
 
 /* Here starts styles of main part */
 
-
-
-.first-lo {
+.first-layout {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -251,7 +261,7 @@ body {
   filter:alpha (opacity=1);
 }
 
-.between-lo {
+.between-layout {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -284,7 +294,7 @@ body {
   z-index: 3;
 }
 
-.second-lo {
+.second-layout {
   display: flex;
   flex-direction: column;
   align-items: center;

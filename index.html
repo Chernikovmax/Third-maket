@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>The Modernist-Home</title>
-  <link rel="stylesheet" href="home-styles.css" />
-  <script async type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body class="body-bcg">
   <header class="header">
@@ -36,90 +35,96 @@
         </ul>
       </nav>
     </div>
-    <!-- This is a Slideshow container -->
+    <!-- Container for slides and buttons -->
     <div class="slideshow-container">
-      <button class="slideshow-left-arrow" onclick="plusSlides(-1)">
+      <button class="slideshow-controls" id="left-btn" onclick="plus-slides(-1)">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
           <defs>
             <path id="fevma" d="M120.43 338.96l12.05-12.03a1.48 1.48 0 0 1 2.52 1.05L128.68 340l6.32 12.02a1.47 1.47 0 0 1-2.52 1.05l-12.05-12.03a1.48 1.48 0 0 1 0-2.09z"/>
           </defs><g><g transform="translate(-120 -326)"><use fill="#76c38f" xlink:href="#fevma"/></g></g>
         </svg>
       </button>
-      <!-- First slide of slideshow -->
-      <section class="mySlides fade">
-        <section class="slideshow-container__text-area">
-          <h1 class="slideshow-container__text-area--header">Cursus penati<br />saccum nulla.</h1>
-          <p class="slideshow-container__text-area--description">
-            Nullamlacus dui ipsum conseque loborttis non euisque <br />
-            morbi penas dapibulum orna. Urnaultrices quis<br />
-            curabitur phasellentesque congue magnis vestibulum<br />
-            quismodo nulla et feugiat adipiscinia pellentum leo.
-          </p>
-          <button class="slideshow-container__text-area--btn">
-            Read More Here »
-          </button>
+      <!-- This is a Slideshow container -->
+      <div class="slideshow-container__slides">
+        <!-- First slide of slideshow -->
+        <section class="slide showing">
+          <section class="slide__text">
+            <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
+            <p class="slide__text-description">
+              Nullamlacus dui ipsum conseque loborttis non euisque <br />
+              morbi penas dapibulum orna. Urnaultrices quis<br />
+              curabitur phasellentesque congue magnis vestibulum<br />
+              quismodo nulla et feugiat adipiscinia pellentum leo.
+            </p>
+            <button class="slide__text-btn">
+              Read More Here »
+            </button>
+          </section>
+          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-1.png" />
         </section>
-        <img class="slideshow-container__imgs" alt="Beautiful  girl" src="images/img-slider-1.png" />
-      </section>
-      <!-- Second slide of slideshow -->
-      <section class="mySlides fade">
-        <section class="slideshow-container__text-area">
-          <h1 class="slideshow-container__text-area--header">The Cranberries<br />Zombie.</h1>
-          <p class="slideshow-container__text-area--description">
-            Another head hangs lowly Child is slowly taken<br />
-            And the violence caused such silence Who are we mistaking?<br />
-            But, you see it's not me It's not my family In your head,<br />
-            in your head They are fighting
-          </p>
-          <button class="slideshow-container__text-area--btn">
-            Read More Here »
-          </button>
+        <!-- Second slide of slideshow -->
+        <section class="slide">
+          <section class="slide__text">
+            <h1 class="slide__text-title">The Cranberries<br />Zombie.</h1>
+            <p class="slide__text-description">
+              Another head hangs lowly Child is slowly taken<br />
+              And the violence caused such silence Who are we mistaking?<br />
+              But, you see it's not me It's not my family In your head,<br />
+              in your head They are fighting
+            </p>
+            <button class="slide__text-btn">
+              Read More Here »
+            </button>
+          </section>
+          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-2.png" />
         </section>
-        <img class="slideshow-container__imgs" alt="Beautiful  girl" src="images/img-slider-2.png" />
-      </section>
-      <!-- Third slide of slideshow -->
-      <section class="mySlides fade">
-        <section class="slideshow-container__text-area">
-          <h1 class="slideshow-container__text-area--header">Cursus penati<br />saccum nulla.</h1>
-          <p class="slideshow-container__text-area--description">
-            With their tanks and their bombs<br />
-            And their bombs and their guns<br />
-            In your head in your head<br />
-            they are crying<br />
-          </p>
-          <button class="slideshow-container__text-area--btn">
-            Read More Here »
-          </button>
+        <!-- Third slide of slideshow -->
+        <section class="slide">
+          <section class="slide__text">
+            <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
+            <p class="slide__text-description">
+              With their tanks and their bombs<br />
+              And their bombs and their guns<br />
+              In your head in your head<br />
+              they are crying<br />
+            </p>
+            <button class="slide__text-btn">
+              Read More Here »
+            </button>
+          </section>
+          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-3.png" />
         </section>
-        <img class="slideshow-container__imgs" alt="Beautiful  girl" src="images/img-slider-3.png" />
-      </section>
-      <!-- Fourth slide of slideshow -->
-      <section class="mySlides fade">
-        <section class="slideshow-container__text-area">
-          <h1 class="slideshow-container__text-area--header">Cursus penati<br />saccum nulla.</h1>
-          <p class="slideshow-container__text-area--description">
-            In your head In your head<br />
-            Zombie, zombie, zombie, ei, ei<br />
-            What's in your head? In your head<br />
-            Zombie, zombie, zombie ei, ei, ei, oh do do do.<br />
-          </p>
-          <button class="slideshow-container__text-area--btn">
-            Read More Here »
-          </button>
+        <!-- Fourth slide of slideshow -->
+        <section class="slide">
+          <section class="slide__text">
+            <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
+            <p class="slide__text-description">
+              In your head In your head<br />
+              Zombie, zombie, zombie, ei, ei<br />
+              What's in your head? In your head<br />
+              Zombie, zombie, zombie ei, ei, ei, oh do do do.<br />
+            </p>
+            <button class="slide__text-btn">
+              Read More Here »
+            </button>
+          </section>
+          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-4.png" />
         </section>
-        <img class="slideshow-container__imgs" alt="Beautiful  girl" src="images/img-slider-4.png" />
-      </section>
-      <button class="slideshow-right-arrow" onclick="plusSlides(1)">
+      </div>
+      <button class="slideshow-controls" id="right-btn" onclick="plus-slides(1)">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
           <defs>
             <path id="2ghba" d="M1079.57 338.96l-12.05-12.03a1.48 1.48 0 0 0-2.52 1.05l6.32 12.02-6.32 12.02a1.48 1.48 0 0 0 2.52 1.05l12.05-12.03a1.48 1.48 0 0 0 0-2.09z"/>
           </defs><g><g transform="translate(-1065 -326)"><use fill="#76c38f" xlink:href="#2ghba"/></g></g>
         </svg>
       </button>
+      <button class="slideshow-controls" id="pause-btn">
+        &#10074;&#10074;
+      </button>
     </div>
   </header>
   <main>
-    <section class="first-lo">
+    <section class="first-layout">
       <section class="title-cards">
         <img class="title-cards__img" src="images/figure1.png" alt="figure">
         <img class="title-cards__bcg-img" src="images/figure1-2.png" alt="figure">
@@ -161,11 +166,11 @@
         </p>
       </section>
     </section>
-    <section class="between-lo">
+    <section class="between-layout">
       <hr class="between-lo-hr" />
       <span class="between-lo-title">LATEST WORK</span>
     </section>
-    <section class="second-lo">
+    <section class="second-layout">
       <section class="second-lo-rows">
         <section class="second-lo-rows__cards">
           <img class="second-lo-imgs" src="images/car1.jpg" alt="car">
@@ -272,5 +277,6 @@
       <span class="footer-lo2__creator-info">Template by OS Templates</span>
     </div>
   </footer>
+  <script type="text/javascript" src="slideshow.js"></script>
 </body>
 </html>
