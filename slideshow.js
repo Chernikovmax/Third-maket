@@ -1,6 +1,7 @@
 const slides = document.querySelectorAll('.slideshow__slide');
 const nextBtn = document.getElementById('right-btn');
 const previousBtn = document.getElementById('left-btn');
+const playbackBtn = document.getElementById('playback-btn');
 let currentSlide = 0;
 let slideInterval = setInterval(switchSlide, 2500);
 
@@ -44,7 +45,6 @@ function goToSlide(n) {
 }
 
 let playing = true;
-const playbackBtn = document.getElementById('pause-btn');
 
 function switchPlayback() {
   if (playing) {
@@ -61,11 +61,13 @@ function switchPlayback() {
 playbackBtn.addEventListener('click', switchPlayback);
 
 nextBtn.addEventListener('click', () => {
+  playing = true;
   switchPlayback();
   goToSlide(currentSlide+1);
 });
 
 previousBtn.addEventListener('click', () => {
+  playing = true;
   switchPlayback();
   goToSlide(currentSlide-1);
 });

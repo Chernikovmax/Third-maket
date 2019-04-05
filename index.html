@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <title>The Modernist-Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
+
 <body class="body-bcg">
   <header class="header">
     <div class="header-panel">
@@ -14,30 +15,34 @@
       </section>
       <nav class="main-nav">
         <ul class="main-nav__ul">
-          <li class="selected main-nav__ul--li">
+          <li class="main-nav__item--selected main-nav__item">
             <a class="main-nav-links" href="#">HOME</a>
           </li>
-          <li class="main-nav__ul--li">
+          <li class="main-nav__item">
             <a class="main-nav-links" href="#">STYLE DEMO</a>
           </li>
-          <li class="main-nav__ul--li">
+          <li class="main-nav__item">
             <a class="main-nav-links" href="#">FULL WIDTH</a>
           </li>
-          <li class="main-nav__ul--li">
+          <li class="main-nav__item">
             <a class="main-nav-links" href="#">DROPDOWN</a>
           </li>
-          <li class="main-nav__ul--li">
+          <li class="main-nav__item">
             <a class="main-nav-links" href="#">PORTFOLIO</a>
           </li>
-          <li class="main-nav__ul--li">
+          <li class="main-nav__item">
             <a class="main-nav-links" href="#">GALLERY</a>
           </li>
         </ul>
       </nav>
     </div>
-    <!-- Container for slides and buttons -->
+  </header>
+
+  <main>
+    <!-- Slides and buttons container -->
     <div class="slideshow">
-      <button class="slideshow-controls" id="left-btn" onclick="plus-slides(-1)">
+
+      <button class="slideshow-controls" id="left-btn">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
           <defs>
             <path id="fevma" d="M120.43 338.96l12.05-12.03a1.48 1.48 0 0 1 2.52 1.05L128.68 340l6.32 12.02a1.47 1.47 0 0 1-2.52 1.05l-12.05-12.03a1.48 1.48 0 0 1 0-2.09z"/>
@@ -45,188 +50,199 @@
         </svg>
       </button>
 
-        <!-- First slide of slideshow -->
-        <section class="slideshow__slide slide--active">
-          <section class="slide__text">
-            <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
-            <p class="slide__text-description">
-              Nullamlacus dui ipsum conseque loborttis non euisque <br />
-              morbi penas dapibulum orna. Urnaultrices quis<br />
-              curabitur phasellentesque congue magnis vestibulum<br />
-              quismodo nulla et feugiat adipiscinia pellentum leo.
-            </p>
-            <button class="slide__text-btn">
-              Read More Here »
-            </button>
-          </section>
-          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-1.png" />
+      <!-- First slide -->
+      <section class="slideshow__slide slide--active">
+        <section class="slide__text">
+          <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
+          <p class="slide__text-description">
+            Nullamlacus dui ipsum conseque loborttis non euisque <br />
+            morbi penas dapibulum orna. Urnaultrices quis<br />
+            curabitur phasellentesque congue magnis vestibulum<br />
+            quismodo nulla et feugiat adipiscinia pellentum leo.
+          </p>
+          <button class="slide__text-btn">
+            Read More Here »
+          </button>
         </section>
-        <!-- Second slide of slideshow -->
-        <section class="slideshow__slide">
-          <section class="slide__text">
-            <h1 class="slide__text-title">Lorem Ipsum<br />Sit Dolor.</h1>
-            <p class="slide__text-description">
-              Possumus tempor cernantur cupidatat. Et si quae fabulas.<br />
-              Amet ubi mentitum eu velit e te cupidatat illustriora, <br />
-              quorum ea expetendis sed legam do fabulas in cillum aliquip.<br />
-              Te veniam noster si nescius hic mentitum dolore quem excepteur <br />
-              sunt, quo ita irure pariatur ubi est sunt occaecat incididunt.<br />
-            </p>
-            <button class="slide__text-btn">
-              Read More Here »
-            </button>
-          </section>
-          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-2.png" />
-        </section>
-        <!-- Third slide of slideshow -->
-        <section class="slideshow__slide">
-          <section class="slide__text">
-            <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
-            <p class="slide__text-description">
-              Si cillum voluptatibus ita o ubi culpa export dolor an iudicem<br />
-              noster irure consequat minim, ne elit amet si doctrina te <br />
-              fabulas esse summis sed fugiat se ne aliqua amet fore admodum ab<br />
-              sunt ex laboris, cillum laboris deserunt. Legam quamquam ex <br />
-              probant, nulla eiusmod quo quamquam.
-            </p>
-            <button class="slide__text-btn">
-              Read More Here »
-            </button>
-          </section>
-          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-3.png" />
-        </section>
-        <!-- Fourth slide of slideshow -->
-        <section class="slideshow__slide">
-          <section class="slide__text">
-            <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
-            <p class="slide__text-description">
-              Tamen sempiternum laborum ipsum eiusmod qui aliquip exquisitaque<br />
-              in fabulas a nisi senserit laborum ne multos cernantur illustriora<br />
-              te laboris duis ullamco admodum te nostrud se incurreret. A anim nostrud.
-            </p>
-            <button class="slide__text-btn">
-              Read More Here »
-            </button>
-          </section>
-          <img class="slide__img" alt="Beautiful girl" src="images/img-slider-4.png" />
-        </section>
-      <!-- </div> -->
+        <img class="slide__img" alt="Funny animal" src="images/img-slider-1.png" />
+      </section>
 
-      <button class="slideshow-controls" id="right-btn" onclick="plus-slides(1)">
+      <!-- Second slide -->
+      <section class="slideshow__slide">
+        <section class="slide__text">
+          <h1 class="slide__text-title">Lorem Ipsum<br />Sit Dolor.</h1>
+          <p class="slide__text-description">
+            Possumus tempor cernantur cupidatat. Et si quae fabulas.<br />
+            Amet ubi mentitum eu velit e te cupidatat illustriora, <br />
+            quorum ea expetendis sed legam do fabulas in cillum aliquip.<br />
+            Te veniam noster si nescius hic mentitum dolore quem excepteur <br />
+            sunt, quo ita irure pariatur ubi est sunt occaecat incididunt.<br />
+          </p>
+          <button class="slide__text-btn">
+            Read More Here »
+          </button>
+        </section>
+        <img class="slide__img" alt="Funny animal" src="images/img-slider-2.png" />
+      </section>
+
+      <!-- Third slide -->
+      <section class="slideshow__slide">
+        <section class="slide__text">
+          <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
+          <p class="slide__text-description">
+            Si cillum voluptatibus ita o ubi culpa export dolor an iudicem<br />
+            noster irure consequat minim, ne elit amet si doctrina te <br />
+            fabulas esse summis sed fugiat se ne aliqua amet fore admodum ab<br />
+            sunt ex laboris, cillum laboris deserunt. Legam quamquam ex <br />
+            probant, nulla eiusmod quo quamquam.
+          </p>
+          <button class="slide__text-btn">
+            Read More Here »
+          </button>
+        </section>
+        <img class="slide__img" alt="Funny animal" src="images/img-slider-3.png" />
+      </section>
+
+      <!-- Fourth slide -->
+      <section class="slideshow__slide">
+        <section class="slide__text">
+          <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
+          <p class="slide__text-description">
+            Tamen sempiternum laborum ipsum eiusmod qui aliquip exquisitaque<br />
+            in fabulas a nisi senserit laborum ne multos cernantur illustriora<br />
+            te laboris duis ullamco admodum te nostrud se incurreret. A anim nostrud.
+          </p>
+          <button class="slide__text-btn">
+            Read More Here »
+          </button>
+        </section>
+        <img class="slide__img" alt="Funny animal" src="images/img-slider-4.png" />
+      </section>
+
+      <button class="slideshow__playback-btn" id="playback-btn">
+        <div class="button-aligner">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+          viewBox="0 0 47.607 47.607" xml:space="preserve">
+          <g style="fill: #6dab7e;">
+            <path d="M17.991,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631C4.729,2.969,7.698,0,11.36,0
+            l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z"/>
+            <path d="M42.877,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631
+            C29.616,2.969,32.585,0,36.246,0l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z"/>
+          </g>
+        </svg>
+      </div>
+      </button>
+
+      <button class="slideshow-controls" id="right-btn">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
           <defs>
             <path id="2ghba" d="M1079.57 338.96l-12.05-12.03a1.48 1.48 0 0 0-2.52 1.05l6.32 12.02-6.32 12.02a1.48 1.48 0 0 0 2.52 1.05l12.05-12.03a1.48 1.48 0 0 0 0-2.09z"/>
           </defs><g><g transform="translate(-1065 -326)"><use fill="#76c38f" xlink:href="#2ghba"/></g></g>
         </svg>
       </button>
-      <!-- Added a "pause" button -->
-      <button class="slideshow__playback-btn" id="pause-btn">
-        <div class="button-aligner">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
-             viewBox="0 0 47.607 47.607" xml:space="preserve">
-            <g style="fill: #6dab7e;">
-              <path d="M17.991,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631C4.729,2.969,7.698,0,11.36,0
-                l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z"/>
-              <path d="M42.877,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631
-                C29.616,2.969,32.585,0,36.246,0l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z"/>
-            </g>
-          </svg>
-        </div>
-      </button>
+
     </div>
-  </header>
-  <main>
-    <section class="first-layout">
-      <section class="title-cards">
-        <img class="title-cards__img" src="images/figure1.png" alt="figure">
-        <img class="title-cards__bcg-img" src="images/figure1-2.png" alt="figure">
+
+
+    <section class="cards">
+      <section class="cards__item">
+        <img class="cards__item-img" src="images/figure1.png" alt="figure">
+        <img class="cards__item-bcg-img" src="images/figure1-2.png" alt="figure">
         <p class="first-lo__card-text">
-          <span class="title-cards__title">SERVICE TITLE</span><br><br>
+          <span class="cards__item-title">SERVICE TITLE</span><br><br>
           Vestassapede et donec ut est<br>
           libe ros sus et eget sed eget<br>
           quisq ueta habitur augue
         </p>
       </section>
-      <section class="title-cards">
-        <img class="title-cards__img" src="images/figure2.png" alt="figure">
-        <img class="title-cards__bcg-img" src="images/figure2-2.png" alt="figure">
+      <section class="cards__item">
+        <img class="cards__item-img" src="images/figure2.png" alt="figure">
+        <img class="cards__item-bcg-img" src="images/figure2-2.png" alt="figure">
         <p class="first-lo__card-text">
-          <span class="title-cards__title">SERVICE TITLE</span><br><br>
+          <span class="cards__item-title">SERVICE TITLE</span><br><br>
           Vestassapede et donec ut est<br>
           libe ros sus et eget sed eget<br>
           quisq ueta habitur augue
         </p>
       </section>
-      <section class="title-cards">
-        <img class="title-cards__img" src="images/figure3.png" alt="figure">
-        <img class="title-cards__bcg-img" src="images/figure3-2.png" alt="figure">
+      <section class="cards__item">
+        <img class="cards__item-img" src="images/figure3.png" alt="figure">
+        <img class="cards__item-bcg-img" src="images/figure3-2.png" alt="figure">
         <p class="first-lo__card-text">
-          <span class="title-cards__title">SERVICE TITLE</span><br><br>
+          <span class="cards__item-title">SERVICE TITLE</span><br><br>
           Vestassapede et donec ut est<br>
           libe ros sus et eget sed eget<br>
           quisq ueta habitur augue
         </p>
       </section>
-      <section class="title-cards">
-        <img class="title-cards__img" src="images/figure4.png" alt="figure">
-        <img class="title-cards__bcg-img" src="images/figure4-2.png" alt="figure">
+      <section class="cards__item">
+        <img class="cards__item-img" src="images/figure4.png" alt="figure">
+        <img class="cards__item-bcg-img" src="images/figure4-2.png" alt="figure">
         <p class="first-lo__card-text">
-          <span class="title-cards__title">SERVICE TITLE</span><br><br>
+          <span class="cards__item-title">SERVICE TITLE</span><br><br>
           Vestassapede et donec ut est<br>
           libe ros sus et eget sed eget<br>
           quisq ueta habitur augue
         </p>
       </section>
     </section>
-    <section class="between-layout">
-      <hr class="between-lo-hr" />
-      <span class="between-lo-title">LATEST WORK</span>
+
+    <section class="works-title">
+      <hr class="works-title__line" />
+      <span class="works-title__title">LATEST WORK</span>
     </section>
-    <section class="second-layout">
-      <section class="second-lo-rows">
-        <section class="second-lo-rows__cards">
-          <img class="second-lo-imgs" src="images/car1.jpg" alt="car">
-          <img class="second-lo-bcg-imgs" src="images/car1-2.jpg" alt="car">
-          <span class="second-lo-rows__text">LOREM IPSUM DOLOR</span>
+
+    <section class="projects">
+      <section class="project-row">
+
+        <section class="project-row__cards">
+          <img class="project-row__img" src="images/car1.jpg" alt="car">
+          <img class="project-row__colored-img" src="images/car1-2.jpg" alt="car">
+          <span class="project-row__text">LOREM IPSUM DOLOR</span>
         </section>
-        <section class="second-lo-rows__cards">
-          <img class="second-lo-imgs" src="images/car2.jpg" alt="car">
-          <img class="second-lo-bcg-imgs" src="images/car2-2.jpg" alt="car">
-          <span class="second-lo-rows__text">LOREM IPSUM DOLOR</span>
+        <section class="project-row__cards">
+          <img class="project-row__img" src="images/car2.jpg" alt="car">
+          <img class="project-row__colored-img" src="images/car2-2.jpg" alt="car">
+          <span class="project-row__text">LOREM IPSUM DOLOR</span>
         </section>
-        <section class="second-lo-rows__cards">
-          <img class="second-lo-imgs" src="images/car3.jpg" alt="car">
-          <img class="second-lo-bcg-imgs" src="images/car3-2.jpg" alt="car">
-          <span class="second-lo-rows__text">LOREM IPSUM DOLOR</span>
+        <section class="project-row__cards">
+          <img class="project-row__img" src="images/car3.jpg" alt="car">
+          <img class="project-row__colored-img" src="images/car3-2.jpg" alt="car">
+          <span class="project-row__text">LOREM IPSUM DOLOR</span>
         </section>
+
       </section>
-      <section class="second-lo-rows">
-        <section class="second-lo-rows__cards">
-          <img class="second-lo-imgs" src="images/car4.jpg" alt="car">
-          <img class="second-lo-bcg-imgs" src="images/car4-2.jpg" alt="car">
-          <span class="second-lo-rows__text">LOREM IPSUM DOLOR</span>
+      <section class="project-row">
+
+        <section class="project-row__cards">
+          <img class="project-row__img" src="images/car4.jpg" alt="car">
+          <img class="project-row__colored-img" src="images/car4-2.jpg" alt="car">
+          <span class="project-row__text">LOREM IPSUM DOLOR</span>
         </section>
-        <section class="second-lo-rows__cards">
-          <img class="second-lo-imgs" src="images/car5.jpg" alt="car">
-          <img class="second-lo-bcg-imgs" src="images/car5-2.jpg" alt="car">
-          <span class="second-lo-rows__text">LOREM IPSUM DOLOR</span>
+        <section class="project-row__cards">
+          <img class="project-row__img" src="images/car5.jpg" alt="car">
+          <img class="project-row__colored-img" src="images/car5-2.jpg" alt="car">
+          <span class="project-row__text">LOREM IPSUM DOLOR</span>
         </section>
-        <section class="second-lo-rows__cards">
-          <img class="second-lo-imgs" src="images/car6.jpg" alt="car">
-          <img class="second-lo-bcg-imgs" src="images/car6-2.jpg" alt="car">
-          <span class="second-lo-rows__text">LOREM IPSUM DOLOR</span>
+        <section class="project-row__cards">
+          <img class="project-row__img" src="images/car6.jpg" alt="car">
+          <img class="project-row__colored-img" src="images/car6-2.jpg" alt="car">
+          <span class="project-row__text">LOREM IPSUM DOLOR</span>
         </section>
+
       </section>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer-lo1">
-      <section class="footer-lo1__columns">
-        <h6 class="footer-lo1__columns--header">From The Blog</h6>
-          <span class="footer-lo1__columns--title">Post Title</span><br />
-          <span class="footer-lo1__columns--userdata"><span class="footer-lo1__columns--username">Admin</span>, domainname.com</span><br />
-          <span class="footer-lo1__columns--date">Friday, 6th April 2000</span><br />
-        <p class="footer-lo1__columns--text">
+
+  <footer class="footer-field">
+
+    <div class="footer-bar">
+      <section class="footer-bar__columns">
+        <h6 class="footer-bar__columns--header">From The Blog</h6>
+          <span class="footer-bar__columns--title">Post Title</span><br />
+          <span class="footer-bar__columns--userdata"><span class="footer-bar__columns--username">Admin</span>, domainname.com</span><br />
+          <span class="footer-bar__columns--date">Friday, 6th April 2000</span><br />
+        <p class="footer-bar__columns--text">
           Vestibulumaccumsan egestibulum<br />
           eu justo convallis augue estas<br />
           aenean elit intesque sed. Facilispede<br />
@@ -235,59 +251,65 @@
           cras urna urnaretra lor urna neque<br />
           sed quis orci nulla.
         </p>
-        <a href="#" class="footer-lo1__columns-link">Read More »</a>
+        <a href="#" class="footer-bar__columns-link">Read More »</a>
       </section>
-      <section class="footer-lo1__columns">
-        <h6 class="footer-lo1__columns--header">Quick Links</h6>
-        <ul class="footer-lo1__columns--ul">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Lorem ipsum dolor sit</a></li>
-          <hr class="footer-lo1__columns--li-hr">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Amet consectetur</a></li>
-          <hr class="footer-lo1__columns--li-hr">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Praesent vel sem id</a></li>
-          <hr class="footer-lo1__columns--li-hr">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Curabitur hendrerit est</a></li>
-          <hr class="footer-lo1__columns--li-hr">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Aliquam eget erat nec sapien</a></li>
-          <hr class="footer-lo1__columns--li-hr">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Cras id augue nunc</a></li>
-          <hr class="footer-lo1__columns--li-hr">
-          <li class="footer-lo1__columns--li"><a href="#" class="footer-lo1__columns-links">Sed a nulla urna</a></li>
-          <hr class="footer-lo1__columns--li-hr">
+
+      <section class="footer-bar__columns">
+        <h6 class="footer-bar__columns--header">Quick Links</h6>
+        <ul class="footer-bar__columns--ul">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Lorem ipsum dolor sit</a></li>
+          <hr class="footer-bar__columns--li-hr">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Amet consectetur</a></li>
+          <hr class="footer-bar__columns--li-hr">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Praesent vel sem id</a></li>
+          <hr class="footer-bar__columns--li-hr">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Curabitur hendrerit est</a></li>
+          <hr class="footer-bar__columns--li-hr">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Aliquam eget erat nec sapien</a></li>
+          <hr class="footer-bar__columns--li-hr">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Cras id augue nunc</a></li>
+          <hr class="footer-bar__columns--li-hr">
+          <li class="footer-bar__columns--li"><a href="#" class="footer-bar__columns-links">Sed a nulla urna</a></li>
+          <hr class="footer-bar__columns--li-hr">
         </ul>
       </section>
-      <section class="footer-lo1__columns">
-        <h6 class="footer-lo1__columns--header">Latest Tweets</h6>
-        <p class="footer-lo1__columns--tweets">
-          <span class="footer-lo1__columns--username">@namehere</span> Justoid nonummy laoreet<br />
+
+      <section class="footer-bar__columns">
+        <h6 class="footer-bar__columns--header">Latest Tweets</h6>
+        <p class="footer-bar__columns--tweets">
+          <span class="footer-bar__columns--username">@namehere</span> Justoid nonummy laoreet<br />
           phasellent penatoque in antesque<br />
           pellus elis eget tincidunt. Nequatdui<br />
           laorem justo a non tellus laoremut vitae<br />
           doloreet 1 day ago
         </p>
-        <p class="footer-lo1__columns--tweets">
-          <span class="footer-lo1__columns--username">@namehere</span> Justoid nonummy laoreet<br />
+        <p class="footer-bar__columns--tweets">
+          <span class="footer-bar__columns--username">@namehere</span> Justoid nonummy laoreet<br />
           phasellent penatoque in antesque<br />
           pellus elis eget tincidunt. Nequatdui<br />
           laorem justo a non tellus laoremut vitae<br />
           doloreet 1 day ago
         </p>
       </section>
-      <section class="footer-lo1__columns">
-        <h6 class="footer-lo1__columns--contact-header">Contact Us</h6>
-        <form class="footer-lo1__columns--contact-form">
+
+      <section class="footer-bar__columns">
+        <h6 class="footer-bar__columns--contact-header">Contact Us</h6>
+        <form class="footer-bar__columns--contact-form">
           <input class="form-inputs" type="text" placeholder="Full Name">
           <input class="form-inputs" type="text" placeholder="Email Address">
           <input class="form-inputs" type="text" placeholder="Subject">
           <input class="form-message-input" type="text" placeholder="Message">
-          <input class="form-submit" type="submit" value="SUBMIT">
+          <button class="form-submit" type="submit">SUBMIT</button>
         </form>
       </section>
+
     </div>
-    <div class="footer-lo2">
-      <span class="footer-lo2__copyright">Copyright © 2013 Domain Name - All Rights Reserved</span>
-      <span class="footer-lo2__creator-info">Template by OS Templates</span>
+
+    <div class="footer-rightholder">
+      <span>Copyright © 2013 Domain Name - All Rights Reserved</span>
+      <span>Template by OS Templates</span>
     </div>
+
   </footer>
   <script type="text/javascript" src="slideshow.js"></script>
 </body>

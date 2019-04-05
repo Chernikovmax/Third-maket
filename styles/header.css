@@ -1,0 +1,71 @@
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px 0 0;
+}
+
+.logo__header {
+  color: #fff;
+  font-family: Georgia;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.logo__description {
+  position: absolute;
+  color: #979797;
+  font-family: Georgia;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 28px;
+}
+
+.main-nav {
+  margin: 10px 0 0 50px;
+}
+
+.main-nav__ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 9px 15px;
+}
+
+.main-nav-links {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Georgia";
+  font-size: 13px;
+}
+
+.main-nav__item--selected {
+  background-color: #76c38f;
+  margin: 0 20px;
+}
+
+.main-nav__item:hover {
+  background-color: #76c38f;
+}
