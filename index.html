@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>The Modernist-Home</title>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="body-bcg">
   <header class="header">
@@ -36,7 +36,7 @@
       </nav>
     </div>
     <!-- Container for slides and buttons -->
-    <div class="slideshow-container">
+    <div class="slideshow">
       <button class="slideshow-controls" id="left-btn" onclick="plus-slides(-1)">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
           <defs>
@@ -44,10 +44,9 @@
           </defs><g><g transform="translate(-120 -326)"><use fill="#76c38f" xlink:href="#fevma"/></g></g>
         </svg>
       </button>
-      <!-- This is a Slideshow container -->
-      <div class="slideshow-container__slides">
+
         <!-- First slide of slideshow -->
-        <section class="slide showing">
+        <section class="slideshow__slide slide--active">
           <section class="slide__text">
             <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
             <p class="slide__text-description">
@@ -63,14 +62,15 @@
           <img class="slide__img" alt="Beautiful girl" src="images/img-slider-1.png" />
         </section>
         <!-- Second slide of slideshow -->
-        <section class="slide">
+        <section class="slideshow__slide">
           <section class="slide__text">
-            <h1 class="slide__text-title">The Cranberries<br />Zombie.</h1>
+            <h1 class="slide__text-title">Lorem Ipsum<br />Sit Dolor.</h1>
             <p class="slide__text-description">
-              Another head hangs lowly Child is slowly taken<br />
-              And the violence caused such silence Who are we mistaking?<br />
-              But, you see it's not me It's not my family In your head,<br />
-              in your head They are fighting
+              Possumus tempor cernantur cupidatat. Et si quae fabulas.<br />
+              Amet ubi mentitum eu velit e te cupidatat illustriora, <br />
+              quorum ea expetendis sed legam do fabulas in cillum aliquip.<br />
+              Te veniam noster si nescius hic mentitum dolore quem excepteur <br />
+              sunt, quo ita irure pariatur ubi est sunt occaecat incididunt.<br />
             </p>
             <button class="slide__text-btn">
               Read More Here »
@@ -79,14 +79,15 @@
           <img class="slide__img" alt="Beautiful girl" src="images/img-slider-2.png" />
         </section>
         <!-- Third slide of slideshow -->
-        <section class="slide">
+        <section class="slideshow__slide">
           <section class="slide__text">
             <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
             <p class="slide__text-description">
-              With their tanks and their bombs<br />
-              And their bombs and their guns<br />
-              In your head in your head<br />
-              they are crying<br />
+              Si cillum voluptatibus ita o ubi culpa export dolor an iudicem<br />
+              noster irure consequat minim, ne elit amet si doctrina te <br />
+              fabulas esse summis sed fugiat se ne aliqua amet fore admodum ab<br />
+              sunt ex laboris, cillum laboris deserunt. Legam quamquam ex <br />
+              probant, nulla eiusmod quo quamquam.
             </p>
             <button class="slide__text-btn">
               Read More Here »
@@ -95,14 +96,13 @@
           <img class="slide__img" alt="Beautiful girl" src="images/img-slider-3.png" />
         </section>
         <!-- Fourth slide of slideshow -->
-        <section class="slide">
+        <section class="slideshow__slide">
           <section class="slide__text">
             <h1 class="slide__text-title">Cursus penati<br />saccum nulla.</h1>
             <p class="slide__text-description">
-              In your head In your head<br />
-              Zombie, zombie, zombie, ei, ei<br />
-              What's in your head? In your head<br />
-              Zombie, zombie, zombie ei, ei, ei, oh do do do.<br />
+              Tamen sempiternum laborum ipsum eiusmod qui aliquip exquisitaque<br />
+              in fabulas a nisi senserit laborum ne multos cernantur illustriora<br />
+              te laboris duis ullamco admodum te nostrud se incurreret. A anim nostrud.
             </p>
             <button class="slide__text-btn">
               Read More Here »
@@ -110,7 +110,8 @@
           </section>
           <img class="slide__img" alt="Beautiful girl" src="images/img-slider-4.png" />
         </section>
-      </div>
+      <!-- </div> -->
+
       <button class="slideshow-controls" id="right-btn" onclick="plus-slides(1)">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="28" viewBox="0 0 15 28">
           <defs>
@@ -119,8 +120,18 @@
         </svg>
       </button>
       <!-- Added a "pause" button -->
-      <button class="slideshow-controls" id="pause-btn">
-        &#10074;&#10074;
+      <button class="slideshow__playback-btn" id="pause-btn">
+        <div class="button-aligner">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+             viewBox="0 0 47.607 47.607" xml:space="preserve">
+            <g style="fill: #6dab7e;">
+              <path d="M17.991,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631C4.729,2.969,7.698,0,11.36,0
+                l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z"/>
+              <path d="M42.877,40.976c0,3.662-2.969,6.631-6.631,6.631l0,0c-3.662,0-6.631-2.969-6.631-6.631V6.631
+                C29.616,2.969,32.585,0,36.246,0l0,0c3.662,0,6.631,2.969,6.631,6.631V40.976z"/>
+            </g>
+          </svg>
+        </div>
       </button>
     </div>
   </header>
